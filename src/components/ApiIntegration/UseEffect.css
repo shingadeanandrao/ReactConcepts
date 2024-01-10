@@ -1,0 +1,43 @@
+.container {
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .empTable {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+    justify-content: center
+}
+
+
+
+.empData {
+  width: 350px;
+  height: 350px;
+  border: none;
+  border-radius: 10px;
+  background-color: snow;
+
+}
+
+.empData img {
+  width: 150px;
+  /* position: relative;
+  left: 90px;
+  padding: 15px; */
+}
+
+.empDet {
+  padding-top: 5px;
+  padding-left: 10px;
+  line-height: 7px;
+
+}

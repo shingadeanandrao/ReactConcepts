@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ParentCompUseMemo from './components/Memo/ParentCompUseMemo';
+import ErrorBoundries from './components/ErrorBoundries/ErrorBoundries';
 // import ParentCompUseContext from './components/useContextHook/ParentCompUseContext';
 
 // import ClassComponentExample from './components/FormHandling/ClassComponentExample';
@@ -51,7 +52,8 @@ function App() {
         {/* <ClassComponentExample/> */}
         {/* <ParentCompUseContext/> */}
         {/* <ContextProvider/> */}
-        <ParentCompUseMemo/>
+        {/* <ParentCompUseMemo/> */}
+        <ErrorBoundries/>
     </div>
   );
 }

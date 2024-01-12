@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ParentCompUseMemo from './components/Memo/ParentCompUseMemo';
 // import ParentCompUseContext from './components/useContextHook/ParentCompUseContext';
 
 // import ClassComponentExample from './components/FormHandling/ClassComponentExample';
@@ -18,7 +19,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import ApiCallUsinguseEffect from './components/ApiIntegration/APICallUsinguseEffect';
 // import ApiCallUsinguseEffectHook from './components/ApiIntegration/ApiCallUsinguseEffectHook';
 // import Container from './components/CompoLifeCycle/Container';
-import ContextProvider from './components/useContextHook/useContext/ContextProvider';
+// import ContextProvider from './components/useContextHook/useContext/ContextProvider';
 
 
 function App() {
@@ -49,7 +50,8 @@ function App() {
         {/* <FormAllInputs/> */}
         {/* <ClassComponentExample/> */}
         {/* <ParentCompUseContext/> */}
-        <ContextProvider/>
+        {/* <ContextProvider/> */}
+        <ParentCompUseMemo/>
     </div>
   );
 }

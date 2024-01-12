@@ -1,5 +1,8 @@
 // /*import React from "react"; or*/ import { Fragment } from "react";
 
+// fragment will enclose the all elements and avoid creating unnecessary node(div) in DOM
+
+
 // const FragmntComp = ()=>{
 //     return(
 //         <div>

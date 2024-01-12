@@ -1,5 +1,8 @@
 import React,{Component} from "react";
 
+
+// state  is used to declare properties and setState is used  to update changed properties and re-render it in class component
+
 class StateInClassComp extends Component{
     constructor(props){
         super(props)

@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+//useState Hook replaces state and setState inside class component 
+
 const UseStateHook = ()=>{
     //syntax of useState Hook
     // const[State Name, function to update state]=useState(initial Value of state)
@@ -15,7 +17,7 @@ const UseStateHook = ()=>{
 
 
     const nameChange=()=>{
-        updateName('Pooja');
+        updateName('Nikita');
     }
     const changeCount=()=>{
         updateCount(count+1);

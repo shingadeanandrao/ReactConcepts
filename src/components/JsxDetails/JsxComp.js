@@ -1,4 +1,6 @@
 import React from "react";
+
+// JSX file will allow to write both javascript and HTML code  
 const JsxComp = ()=>{
     let p=10, q= 20;
     return(

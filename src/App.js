@@ -3,6 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ParentCompUseMemo from './components/Memo/ParentCompUseMemo';
 import ErrorBoundries from './components/ErrorBoundries/ErrorBoundries';
 import ShoppingUseReducer from './components/UseReducerHook/ShoppingUseReducer';
+import ControlledComp from './components/ControlledAndUncontrolledComp/ControlledComp';
+import UncontrolledComp from './components/ControlledAndUncontrolledComp/UncontrolledComp';
+import ChartsTest from './components/ApexCharts/ChartsTest';
 // import ParentCompUseContext from './components/useContextHook/ParentCompUseContext';
 
 // import ClassComponentExample from './components/FormHandling/ClassComponentExample';
@@ -55,7 +58,10 @@ function App() {
         {/* <ContextProvider/> */}
         {/* <ParentCompUseMemo/> */}
         {/* <ErrorBoundries/> */}
-        <ShoppingUseReducer/>
+        {/* <ShoppingUseReducer/> */}
+        {/* <ControlledComp/> */}
+        {/* <UncontrolledComp/> */}
+        <ChartsTest/>
     </div>
   );
 }

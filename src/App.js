@@ -6,6 +6,7 @@ import ShoppingUseReducer from './components/UseReducerHook/ShoppingUseReducer';
 import ControlledComp from './components/ControlledAndUncontrolledComp/ControlledComp';
 import UncontrolledComp from './components/ControlledAndUncontrolledComp/UncontrolledComp';
 import ChartsTest from './components/ApexCharts/ChartsTest';
+import ControlledCompAssig from './components/ControlledAndUncontrolledComp/ControlledCompAssig';
 // import ParentCompUseContext from './components/useContextHook/ParentCompUseContext';
 
 // import ClassComponentExample from './components/FormHandling/ClassComponentExample';
@@ -59,9 +60,10 @@ function App() {
         {/* <ParentCompUseMemo/> */}
         {/* <ErrorBoundries/> */}
         {/* <ShoppingUseReducer/> */}
-        {/* <ControlledComp/> */}
+        <ControlledComp/>
         {/* <UncontrolledComp/> */}
-        <ChartsTest/>
+        {/* <ChartsTest/> */}
+        {/* <ControlledCompAssig/> */}
     </div>
   );
 }

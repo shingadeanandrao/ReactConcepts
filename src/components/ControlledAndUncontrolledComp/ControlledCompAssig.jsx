@@ -13,9 +13,9 @@ const ControlledCompAssig = () => {
         state.result= parseInt(state.num1,10) - parseInt(state.num2,10);
         return state.result
         break;
-      // case 'Sub':
-      //  return parseInt(state.num1,10) - parseInt(state.num2,10);
-      //   break;
+      case 'Sub':
+       return parseInt(state.num1,10) - parseInt(state.num2,10);
+        break;
       case 'reset':
         return 0; // Resetting to 0
         break;

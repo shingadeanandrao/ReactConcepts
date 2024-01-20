@@ -24,7 +24,7 @@ const AddEmployee = () => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
-     // event.stopPropagation();
+     event.stopPropagation();
     }
 
     const employee = {id:Date.now() ,empId, name, position, company}

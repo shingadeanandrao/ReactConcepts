@@ -39,7 +39,7 @@ const EmployeeList = () => {
                       <td>{employee.position}</td>
                       <td> {employee.company}</td>
                       <td> <Button variant="primary" size="sm" onClick={()=>navigate(`/editEmployee/${employee.id}`)}>Edit</Button>
-                      <Button variant="primary" size="sm" onClick={()=>handleDelete(employee.id)} style={{marginLeft:'10px'}}>Delete</Button>
+                      <Button variant="danger" size="sm" onClick={()=>handleDelete(employee.id)} style={{marginLeft:'10px'}}>Delete</Button>
                       </td>
                   </tr>
 

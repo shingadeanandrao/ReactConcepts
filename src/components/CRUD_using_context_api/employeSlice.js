@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
 
-    employee : []
+    employees : []
 }
 
 const employeeSlice = createSlice(
@@ -12,15 +12,22 @@ const employeeSlice = createSlice(
         initialState,
         reducers : {
         
-            addEmployee :(employee)=> {
-
+            addEmployee :(state, actions)=> {
+            state.employees.push(actions.payload)
             },
 
-            updateEmployee:(id,updatedEmployee)=>{
+            updateEmployee:(state,actions)=>{
 
+               const {id,updatedEmployee}= actions.payload
+               const index=state.employees.findIndex((emp)=>emp.id===id)
+               if(index !== -1){
+                state.employees[index]={...state.employees[index],...updatedEmployee}
+               }
             },
 
-            deleteEmployee : (id)=>{
+            deleteEmployee : (state,actions)=>{
+               state.employees= state.employees.filter(employee=>employee.id!== actions.payload)
+                
 
             }
         }

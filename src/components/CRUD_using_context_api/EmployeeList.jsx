@@ -2,14 +2,22 @@ import React, { useContext} from 'react'
 import { Button } from 'react-bootstrap'
 import './crudStyle.css'
 import { useNavigate } from 'react-router-dom';
-import { EmployeeContext } from './EmployeeStore';
+// import { EmployeeContext } from './EmployeeStore';
+import { UseSelector, useDispatch, useSelector } from 'react-redux';
+
+import { deleteEmployee } from './employeSlice';
+import { UseDispatch } from 'react-redux';
 
 const EmployeeList = () => {
     const navigate = useNavigate()
-    const{employees,deleteEmployee} = useContext(EmployeeContext)
+    // const{employees,deleteEmployee} = useContext(EmployeeContext)
+    const employees= useSelector(state=>state.employee.employees);
+
+    const dispatch = useDispatch();
 
     const handleDelete =(id)=>{
-      deleteEmployee(id)
+      // deleteEmployee(id)
+      dispatch(deleteEmployee(id))
     }
   return (
     <div>

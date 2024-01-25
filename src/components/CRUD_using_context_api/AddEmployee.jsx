@@ -5,8 +5,10 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { EmployeeContext } from './EmployeeStore';
-import { useContext } from 'react';
+// import { EmployeeContext } from './EmployeeStore';
+// import { useContext } from 'react';
+import {useDispatch } from 'react-redux';
+import { addEmployee } from './employeSlice';
 
 const AddEmployee = () => {
 
@@ -18,7 +20,8 @@ const AddEmployee = () => {
 
   const navigate = useNavigate();
 
-  const{employees, addEmployee} = useContext(EmployeeContext);
+  // const{employees, addEmployee} = useContext(EmployeeContext);
+  const dispatch = useDispatch();
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
@@ -29,7 +32,8 @@ const AddEmployee = () => {
 
     const employee = {id:Date.now() ,empId, name, position, company}
     console.log(employee)
-    addEmployee(employee)
+    // addEmployee(employee)
+    dispatch(addEmployee(employee))
     navigate('/')
     setValidated(true);
   };

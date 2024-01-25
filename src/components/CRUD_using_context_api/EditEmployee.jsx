@@ -5,8 +5,11 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { EmployeeContext } from './EmployeeStore';
-import { useContext } from 'react';
+// import { EmployeeContext } from './EmployeeStore';
+// import { useContext } from 'react';
+import { UseSelector, useDispatch, useSelector } from 'react-redux';
+import { updateEmployee } from './employeSlice';
+import { UseDispatch } from 'react-redux';
 
 const EditEmployee = () => {
   const [validated, setValidated] = useState(false);
@@ -17,7 +20,11 @@ const EditEmployee = () => {
 
   const navigate = useNavigate();
 
-  const{employees,updateEmployee} = useContext(EmployeeContext);
+  // const{employees,updateEmployee} = useContext(EmployeeContext);
+
+  const employees= useSelector(state=>state.employee.employees)
+
+  const dispatch=useDispatch()
 
   const {id} =useParams();
 
@@ -40,7 +47,8 @@ const EditEmployee = () => {
 
     const updatedEmployee = {id:parseInt(id) ,empId, name, position, company}
     console.log(updatedEmployee)
-    updateEmployee(parseInt(id),updatedEmployee)
+    // updateEmployee(parseInt(id),updatedEmployee)
+    dispatch(updateEmployee({id:parseInt(id), updatedEmployee}))
     navigate('/')
     setValidated(true);
   }

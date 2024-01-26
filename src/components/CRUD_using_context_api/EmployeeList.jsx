@@ -3,10 +3,9 @@ import { Button } from 'react-bootstrap'
 import './crudStyle.css'
 import { useNavigate } from 'react-router-dom';
 // import { EmployeeContext } from './EmployeeStore';
-import { UseSelector, useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { deleteEmployee } from './employeSlice';
-import { UseDispatch } from 'react-redux';
 
 const EmployeeList = () => {
     const navigate = useNavigate()
@@ -24,6 +23,10 @@ const EmployeeList = () => {
             <h5> Employee List</h5>
             <div className='addEmployeeBtn'>
             <Button variant="primary" onClick={()=>navigate('/addEmployee')}>Add Employee</Button>
+
+            </div>
+            <div className='addEmployeeBtn'> 
+            <Button variant="primary" onClick={()=>navigate('/addStudent')}>Add Student</Button>
 
             </div>
             <div>

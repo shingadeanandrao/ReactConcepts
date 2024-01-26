@@ -13,6 +13,9 @@ import { EmployeeProvider } from './components/CRUD_using_context_api/EmployeeSt
 import EmployeeList from './components/CRUD_using_context_api/EmployeeList';
 import AddEmployee from './components/CRUD_using_context_api/AddEmployee';
 import EditEmployee from './components/CRUD_using_context_api/EditEmployee';
+import StudentList from './components/CRUD_using_context_api/StudentList';
+import AddStudent from './components/CRUD_using_context_api/AddStudent';
+import EditStudent from './components/CRUD_using_context_api/EditStudent';
 // import ParentCompUseContext from './components/useContextHook/ParentCompUseContext';
 
 // import ClassComponentExample from './components/FormHandling/ClassComponentExample';
@@ -68,6 +71,7 @@ function App() {
         {/* <UncontrolledComp/> */}
         {/* <ChartsTest/> */}
         {/* <ControlledCompAssig/> */}
+       
 
         <Router>
           {/* <EmployeeProvider> */}
@@ -75,6 +79,9 @@ function App() {
             <Route exact path='/' element={<EmployeeList/>}></Route>
             <Route exact path='/addEmployee' element={<AddEmployee/>}></Route>
             <Route exact path='/editEmployee/:id' element={<EditEmployee/>}></Route>
+            <Route exact path='/studentList' element={<StudentList/>}></Route>
+            <Route exact path='/addStudent' element={<AddStudent/>}></Route>
+            <Route exact path='/editStudent/:id' element={<EditStudent/>}></Route>
           </Routes>
           {/* </EmployeeProvider> */}
         </Router>

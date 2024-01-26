@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 // import { EmployeeContext } from './EmployeeStore';
 // import { useContext } from 'react';
-import { UseSelector, useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { updateEmployee } from './employeSlice';
 import { UseDispatch } from 'react-redux';
 

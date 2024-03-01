@@ -26,7 +26,7 @@ class EventBinding extends Component{
                 <h1>Inside Event Binding Class</h1>
                 <h5> Name is: {this.state.userName}</h5>
 
-                <Button variant="primary" onClick={this.userNameChange.bind(this)}>UserChange</Button>
+                {/* <Button variant="primary" onClick={this.userNameChange.bind(this)}>UserChange</Button> */}
                 {/* Event binding using Arrow function */}
 
                 <Button variant="primary" onClick={this.userNameChange}>NameChange</Button>

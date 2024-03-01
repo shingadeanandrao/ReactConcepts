@@ -16,6 +16,7 @@ const employeeSlice = createSlice(
             state.employees.push(actions.payload)
             },
 
+            
             updateEmployee:(state,actions)=>{
 
                const {id,updatedEmployee}= actions.payload
